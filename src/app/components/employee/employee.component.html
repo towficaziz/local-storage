@@ -1,1 +1,138 @@
-<p>employee works!</p>
+<div class="row">
+  <div class="col-md-4">
+    <h3>Employee Details Entry Form</h3>
+    <div class="outerDiv">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Name</label>
+        </div>
+        <div class="col-md-4">
+          <input type="text" [(ngModel)]="employeeObj.FirstName" class="form-control"/>
+        </div>
+        <div class="col-md-4">
+          <input type="text" [(ngModel)]="employeeObj.LastName" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <label>Technology</label>
+        </div>
+        <div class="col-md-7">
+          <input type="text" [(ngModel)]="employeeObj.Technology" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <label>Designation</label>
+        </div>
+        <div class="col-md-7">
+          <input type="text" [(ngModel)]="employeeObj.Designation" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <label>Skills</label>
+        </div>
+        <div class="col-md-7">
+          <select [(ngModel)]="employeeObj.Skill" class="form-control" id="">
+            <option value="">Select</option>
+            <option value="">Dot Net</option>
+            <option value="">Angular</option>
+            <option value="">Java</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <label>Core Expertise in:</label>
+        </div>
+        <div class="col-md-7">
+          <input type="text" [(ngModel)]="employeeObj.Core" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <label>Certification If Any</label>
+        </div>
+        <div class="col-md-7">
+          <input type="radio" /> Yes
+          <input type="radio" /> No
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-7">
+          <input type="text" [(ngModel)]="employeeObj.IsCertification" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label>Company</label>
+        </div>
+        <div class="col-md-8">
+          <input type="text" [(ngModel)]="employeeObj.Company" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label>Tell Something about yourself:</label>
+          <textarea rows="2" [(ngModel)]="employeeObj.SomeDetails" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6 text-end">
+          <button class="btn btn-warning btn-sm me-2">Cancel</button>
+          <button class="btn btn-primary btn-sm">Save</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-8">
+    <h3>Employee List</h3>
+    <div class="outerDiv">
+      <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-3">
+          <select class="form-control">
+            <option value="">Select</option>
+            <option value="">Dot Net</option>
+            <option value="">Angular</option>
+            <option value="">Java</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Sr</th>
+                <th>Name</th>
+                <th>Technology</th>
+                <th>Designation</th>
+                <th>Skill</th>
+                <th>Core Expertise</th>
+                <th>Company</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
